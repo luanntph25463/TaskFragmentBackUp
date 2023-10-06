@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="App">
+
+        <CheckBoxPreference
+            android:key="checkbox_preference"
+            android:title="Checkbox Preference"
+            android:summary="This is a checkbox preference" />
+
+        <SwitchPreference
+            android:key="switch_preference"
+            android:title="Switch Preference"
+            android:summary="This is a switch preference" />
+
+        <ListPreference
+            android:key="list_preference"
+            android:title="List Preference"
+            android:summary="This is a list preference"
+            android:entries="@array/list_entries"
+            android:entryValues="@array/list_values" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="User">
+        <com.example.taskfragmentbackup.CustomDialogPreference
+            android:key="dialog_preference"
+            android:title="Dialog Preference"
+            android:summary="This is a custom dialog preference" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
